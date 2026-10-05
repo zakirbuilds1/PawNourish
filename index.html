@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PawNourish Natural Pet Food</title>
+<meta name="description" content="PawNourish makes natural pet food with real ingredients for dogs, cats, small pets, birds, fish and reptiles. Free shipping on orders over $50. Subscribe and save up to 15%.">
+<meta property="og:title" content="PawNourish Natural Pet Food">
+<meta property="og:description" content="Good food, brighter days. Natural nutrition for longer, happier, healthier lives.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero-1000.webp">
+<meta name="theme-color" content="#1e4d2b">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" as="image" imagesrcset="images/hero-1000.webp 1000w, images/hero-1400.webp 1400w" imagesizes="(max-width: 900px) 100vw, 60vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ Top bar ============ -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11"/><path d="M12 14c-4 0-6.5-2.7-6.5-7 4 0 6.5 2.7 6.5 7zM12 12c0-4 2.5-6.5 6.5-6.5 0 4-2.5 6.5-6.5 6.5z"/></svg>Free shipping on orders over $50</p>
+    <p class="tb-mid">Healthy Pets. Happier Lives.</p>
+    <p class="tb-end"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Natural Ingredients <span aria-hidden="true">|</span> Vet Approved</p>
+  </div>
+</div>
+
+<!-- ============ Header ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="PawNourish, back to top">
+      <svg class="paw" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>
+      <span class="brand-text"><span class="brand-name">Paw<b>Nourish</b></span><span class="brand-sub">Real food. Brighter days.</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li class="has-drop">
+          <button class="drop-btn" type="button" aria-expanded="false" aria-controls="shopDrop">Shop <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg></button>
+          <div class="drop" id="shopDrop" hidden>
+            <a href="#featured" data-filter="all">All Products</a>
+            <a href="#featured" data-filter="dog">Dog Food</a>
+            <a href="#featured" data-filter="cat">Cat Food</a>
+            <a href="#featured" data-filter="small">Small Pet Food</a>
+            <a href="#featured" data-filter="bird">Bird Food</a>
+            <a href="#featured" data-filter="fish">Fish Food</a>
+            <a href="#featured" data-filter="reptile">Reptile Food</a>
+          </div>
+        </li>
+        <li><a href="#shop-by-pet">By Pet</a></li>
+        <li><a href="#ingredients">Nutrition</a></li>
+        <li><a href="#subscribe">Subscribe &amp; Save</a></li>
+        <li><a href="#faq">Help</a></li>
+      </ul>
+    </nav>
+
+    <form class="search" id="searchForm" role="search">
+      <label class="sr-only" for="searchInput">Search natural pet food</label>
+      <input id="searchInput" type="search" placeholder="Search natural pet food..." autocomplete="off">
+      <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+    </form>
+
+    <div class="nav-icons">
+      <div class="acct">
+        <button class="icon-btn" type="button" id="acctBtn" aria-expanded="false" aria-controls="acctMenu" aria-label="Orders and help">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c.8-3.8 3.9-6 7.5-6s6.7 2.2 7.5 6"/></svg>
+        </button>
+        <div class="acct-menu" id="acctMenu" hidden>
+          <p>Orders &amp; help</p>
+          <a href="#faq-track" data-faq="faq-track">Track an order</a>
+          <a href="#faq-subscription" data-faq="faq-subscription">Manage a subscription</a>
+          <a href="#faq-returns" data-faq="faq-returns">Returns &amp; refunds</a>
+          <a href="#contact">Contact us</a>
+        </div>
+      </div>
+      <button class="icon-btn cart-btn" type="button" id="cartBtn" aria-label="Open cart, 0 items">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+        <span class="cart-count" id="cartCount" aria-hidden="true">0</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#featured" data-filter="all">Shop all food</a>
+      <a href="#shop-by-pet">Shop by pet</a>
+      <a href="#ingredients">Nutrition</a>
+      <a href="#subscribe">Subscribe &amp; Save</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">Help</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="top" aria-label="Welcome">
+    <div class="hero-media">
+      <img class="lqip" style="--lqip: url(data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoYABAAPqlInEkmJKKhMAgAwBUJZQC06A5duqGgKMNwAO6o2lbCWEGOevXp77EInI1exCga8AXBnsgKpafOeWN2gpxwbxrgAAA=)" src="images/hero-1400.webp" srcset="images/hero-1000.webp 1000w, images/hero-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 60vw" alt="A smiling husky and a tabby cat sitting together on a bright sofa" width="1400" height="933" fetchpriority="high" decoding="async">
+    </div>
+    <p class="hero-note" aria-hidden="true">Fuel their<br>best life <span>&#9825;</span></p>
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="sealPath" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+        <text><textPath href="#sealPath">NATURAL NUTRITION &#8226; REAL LOVE &#8226; NATURAL NUTRITION &#8226; REAL LOVE &#8226;</textPath></text>
+      </svg>
+      <span class="seal-core"><svg viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M12 14c-4 0-6.5-2.7-6.5-7 4 0 6.5 2.7 6.5 7zM12 12c0-4 2.5-6.5 6.5-6.5 0 4-2.5 6.5-6.5 6.5z"/></svg></span>
+    </div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          <span class="line"><span style="--d:.1s">Good Food</span></span>
+          <span class="line"><span style="--d:.22s">Brighter Days</span></span>
+        </h1>
+        <p class="hero-lede rise" style="--d:.4s">Natural nutrition for longer, happier, healthier lives.</p>
+        <a class="btn btn-green btn-lg rise" style="--d:.52s" href="#featured" data-filter="all">Shop Natural Food
+          <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </a>
+        <ul class="hero-points rise" style="--d:.64s">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11"/><path d="M12 14c-4 0-6.5-2.7-6.5-7 4 0 6.5 2.7 6.5 7zM12 12c0-4 2.5-6.5 6.5-6.5 0 4-2.5 6.5-6.5 6.5z"/></svg>Real<br>Ingredients</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Better<br>Health</li>
+          <li><svg viewBox="0 0 64 64" aria-hidden="true" class="fill"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>Happier<br>Pets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Shop by Pet ============ -->
+  <section class="pets section-tight" id="shop-by-pet">
+    <div class="wrap">
+      <div class="row-head">
+        <div class="row-title"><h2 class="h2">Shop by Pet</h2><p>Nutritious choices for every companion</p></div>
+        <a class="text-link" href="#featured" data-filter="all">View All <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      </div>
+      <div class="rail">
+        <button class="round-btn prev" type="button" aria-label="Scroll pets left" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+        <ul class="pet-track" id="petTrack">
+          <li><a class="pet" href="#featured" data-filter="dog"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAwAAkA+JQBOgCHUli7DgAD+1hL2Q9ygizQ3L+dM8LColGXEyDcyLgAAAA==)"><img src="images/c-dog-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Dog Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="cat"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoMAAwAAkA+JZwAAtyVoMsIAAD+1dW27XZh7hS0vxhi2pABcAA=)"><img src="images/c-cat-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Cat Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="small"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoMAAwAAkA+JZwC7ADdIkNFIAD+81CmeBvLUPI4am6PXb85O2e9xPKVgAA=)"><img src="images/c-rabbit-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Small Pet Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="bird"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAwAAkA+JYwAAlw2tlJ7p4AA/vigtbdW0ZF9DX4Nsdjf/2gnhAAA)"><img src="images/c-bird-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Bird Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="fish"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoMAAwAAkA+JZgCdAEOozGAAP3im0Hxy7/Cp8Mjt+p55cBw31XxLmc17+MdeKGgAAA=)"><img src="images/c-fish-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Fish Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="reptile"><span class="pet-img lqip" style="--lqip: url(data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAwAAkA+JQBOgBuEE6tAAP7qvOmXMjHC/uBKfmV86gYPWKv3rJ36wAA=)"><img src="images/c-reptile-280.webp" alt="" width="280" height="280" loading="lazy" decoding="async"></span>Reptile Food</a></li>
+          <li><a class="pet" href="#featured" data-filter="all"><span class="pet-img all"><svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg></span>All Categories</a></li>
+        </ul>
+        <button class="round-btn next" type="button" aria-label="Scroll pets right"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Featured products ============ -->
+  <section class="featured section-tight" id="featured">
+    <div class="wrap">
+      <div class="row-head">
+        <div class="row-title stack"><h2 class="h2">Featured Natural Foods</h2><p>Wholesome nutrition. Trusted by pet parents.</p></div>
+      </div>
+      <div class="chips" role="group" aria-label="Filter by pet">
+        <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="dog" aria-pressed="false">Dog</button>
+        <button type="button" class="chip" data-filter="cat" aria-pressed="false">Cat</button>
+        <button type="button" class="chip" data-filter="small" aria-pressed="false">Small Pet</button>
+        <button type="button" class="chip" data-filter="bird" aria-pressed="false">Bird</button>
+        <button type="button" class="chip" data-filter="fish" aria-pressed="false">Fish</button>
+        <button type="button" class="chip" data-filter="reptile" aria-pressed="false">Reptile</button>
+      </div>
+      <p class="result-note" id="resultNote" role="status" hidden></p>
+      <div class="products" id="productGrid" aria-live="polite"></div>
+      <noscript><p class="result-note">Turn on JavaScript to browse and order our foods, or call us on (800) 555-0142.</p></noscript>
+    </div>
+  </section>
+
+  <!-- ============ Promos ============ -->
+  <section class="promos section-tight" aria-label="Offers">
+    <div class="wrap promo-grid">
+      <article class="promo promo-offer reveal">
+        <div class="promo-copy">
+          <p class="promo-kicker">Special Offer</p>
+          <h2>Get 20% Off <span>Your First Order</span></h2>
+          <p>Wholesome food for wagging tails and happy purrs!</p>
+          <div class="promo-actions">
+            <a class="btn btn-green" href="#featured" data-filter="all">Shop Now <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <button class="code-chip" type="button" id="copyCode" aria-label="Copy code WELCOME20">Code: <b>WELCOME20</b> <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></svg></button>
+          </div>
+        </div>
+        <div class="promo-media lqip" style="--lqip: url(data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwBACdASoUABAAPqlEnEkmI6KhMAgAwBUJYwCdMoRwIsC//QOMs59vL5EtceCAAP7vvy6r+r0HwCDshd7Db7Vm7KQTVOb3qP3rTJQB2QAAAA==)"><img class="fade-img" src="images/promo-puppy-720.webp" alt="A golden retriever puppy lying down and winking" width="720" height="600" loading="lazy" decoding="async"></div>
+        <span class="off-badge" aria-hidden="true"><b>20%</b>OFF</span>
+      </article>
+
+      <article class="promo promo-season reveal">
+        <div class="promo-copy">
+          <p class="promo-kicker">Seasonal Nutrition</p>
+          <h2>Healthy Meals for Every Season</h2>
+          <p>Explore our seasonal collection with fresh, natural ingredients.</p>
+          <div class="promo-actions">
+            <a class="btn btn-green" href="#featured" data-filter="all">Explore Collection <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </div>
+        <div class="promo-media lqip" style="--lqip: url(data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUABAAPqlGnkmmI6KhMAgAwBUJYwC7AB6XCHJk6F67WMAA/vUUiMUmCieV39a0vPq6n2q7MSeI3talyDl7VTqowaiFHIAA)"><img class="fade-img" src="images/promo-cat-720.webp" alt="A tabby cat looking up with wide green eyes" width="720" height="600" loading="lazy" decoding="async"></div>
+        <p class="promo-note" aria-hidden="true">Good food<br>all year<br>round &#9825;</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ Subscribe & Save ============ -->
+  <section class="subscribe" id="subscribe">
+    <div class="wrap">
+      <div class="sub-band reveal">
+        <div class="sub-copy">
+          <h2 class="h2">Never Run Out<br>of Their Favorites</h2>
+          <p>Subscribe &amp; save on natural pet food, delivered on your schedule.</p>
+          <ul class="sub-points">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 15.5 7-7M9 9h.01M15 15h.01"/></svg>Save up to 15%</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6h11v9h-11zM13.5 9h4l3 3.2V15h-7"/><circle cx="6.5" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg>Flexible delivery</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg>Pause or cancel anytime</li>
+          </ul>
+          <button class="btn btn-green" type="button" id="openSub">Start a Subscription <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+        </div>
+        <div class="sub-visual" aria-hidden="true">
+          <p class="sub-note">Goodness<br>at your doorstep<br>&mdash; Always!</p>
+          <svg class="sub-arrow" viewBox="0 0 80 60"><path d="M6 8c20 2 40 10 52 34"/><path d="m50 40 8 4 2-9"/></svg>
+          <div class="box">
+            <span class="box-lid"></span>
+            <span class="box-tape"></span>
+            <div class="box-face">
+              <svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>
+              <b>PawNourish</b>
+              <span>Healthy Pets. Delivered.</span>
+            </div>
+          </div>
+          <span class="kibble lqip" style="--lqip: url(data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAwAAkA+JQBOgCHv++UeeAAA/u3tuFgaEkReOnI96XPyctc0jrBpHya24ONAAAA=)"><img src="images/kibble-480.webp" alt="" width="480" height="480" loading="lazy" decoding="async"></span>
+          <svg class="leaf leaf-a" viewBox="0 0 40 40"><path d="M6 34C6 16 18 6 36 4c0 18-12 30-30 30z"/><path class="vein" d="M8 32 30 10"/></svg>
+          <svg class="leaf leaf-b" viewBox="0 0 40 40"><path d="M6 34C6 16 18 6 36 4c0 18-12 30-30 30z"/><path class="vein" d="M8 32 30 10"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Ingredients ============ -->
+  <section class="ingredients section-tight" id="ingredients">
+    <div class="wrap">
+      <div class="row-head">
+        <div class="row-title"><h2 class="h2">Premium Ingredients, Real Benefits</h2></div>
+        <a class="text-link" href="#faq-sourcing" data-faq="faq-sourcing">Learn More <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      </div>
+      <ul class="benefits">
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#c8642a" d="M38 8c10 0 18 8 18 18 0 9-6 15-13 17l-9 9-8-8 9-9c2-7 8-13 3-27z"/><path fill="#e08a4a" d="M40 12c7 1 12 7 12 14 0 6-4 11-10 13-1-11-3-19-2-27z"/><path fill="#f4ead8" d="M26 44l-8 8a5 5 0 1 1-6 2 5 5 0 1 1 2-6l8-8z"/></svg>
+          <b>Real Meat</b><span>for Strong Muscles</span>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="none" stroke="#6b8e2e" stroke-width="3" stroke-linecap="round" d="M32 60V14"/><g fill="#d8a43b"><ellipse cx="26" cy="22" rx="5" ry="8" transform="rotate(-25 26 22)"/><ellipse cx="38" cy="22" rx="5" ry="8" transform="rotate(25 38 22)"/><ellipse cx="25" cy="34" rx="5" ry="8" transform="rotate(-25 25 34)"/><ellipse cx="39" cy="34" rx="5" ry="8" transform="rotate(25 39 34)"/><ellipse cx="25" cy="46" rx="5" ry="8" transform="rotate(-25 25 46)"/><ellipse cx="39" cy="46" rx="5" ry="8" transform="rotate(25 39 46)"/><ellipse cx="32" cy="10" rx="4.5" ry="7.5"/></g></svg>
+          <b>Whole Grains</b><span>for Lasting Energy</span>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4f9a3a" d="M40 6c-1 7-4 11-9 13 2-6 5-10 9-13zM48 12c-4 5-9 8-15 8 4-5 9-8 15-8zM30 4c3 6 3 11 1 15-3-4-3-9-1-15z"/><path fill="#ec7a24" d="M33 20c6 2 9 7 7 12L22 60c-2 2-5 0-4-3l8-30c2-5 4-8 7-7z"/><path fill="none" stroke="#c75d12" stroke-width="2" stroke-linecap="round" d="M25 35h6M23 43h6M21 51h5"/></svg>
+          <b>Fruits &amp; Vegetables</b><span>for Essential Nutrients</span>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#4f9a3a" d="M30 14c-6-6-14-6-18-2 6 4 12 4 18 2zM34 14c4-7 11-9 16-6-5 5-11 7-16 6z"/><g fill="#3f5fb5"><circle cx="22" cy="34" r="11"/><circle cx="42" cy="32" r="11"/><circle cx="32" cy="48" r="11"/></g><g fill="#2b4588"><path d="M22 30l1.5 3h3l-2.5 2 1 3-3-2-3 2 1-3-2.5-2h3zM42 28l1.5 3h3l-2.5 2 1 3-3-2-3 2 1-3-2.5-2h3zM32 44l1.5 3h3l-2.5 2 1 3-3-2-3 2 1-3-2.5-2h3z"/></g><g fill="#fff" opacity=".35"><circle cx="17" cy="30" r="2.5"/><circle cx="37" cy="28" r="2.5"/><circle cx="27" cy="44" r="2.5"/></g></svg>
+          <b>Superfoods</b><span>for a Stronger Immunity</span>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="oil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c443"/><stop offset="1" stop-color="#e08c17"/></linearGradient></defs><path fill="url(#oil)" d="M32 6c9 13 18 23 18 34a18 18 0 0 1-36 0C14 29 23 19 32 6z"/><path fill="#fff" opacity=".5" d="M24 38c0-6 3-11 6-15-1 6-2 10 0 16-3 2-6 2-6-1z"/></svg>
+          <b>Omega Fatty Acids</b><span>for Healthy Skin &amp; Coat</span>
+        </li>
+        <li class="reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#5aa13f" d="M10 54C10 28 26 10 56 8c-1 30-18 46-46 46z"/><path fill="none" stroke="#3a7a2a" stroke-width="2.5" stroke-linecap="round" d="M12 52 44 20"/><circle cx="46" cy="46" r="12" fill="#fff" stroke="#2f6b3a" stroke-width="2.5"/><path fill="none" stroke="#2f6b3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m40 46 4.5 4.5L53 42"/></svg>
+          <b>No Artificial Additives</b><span>Just Pure Nutrition</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="reviews section-tight" id="reviews">
+    <div class="wrap">
+      <div class="row-head">
+        <div class="row-title stack"><h2 class="h2">Happy Pets, Happier Parents</h2><p>Real stories from our community</p></div>
+      </div>
+      <div class="rail">
+        <button class="round-btn prev" type="button" aria-label="Previous reviews" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+        <div class="review-track" id="reviewTrack" tabindex="0" aria-label="Customer reviews, scroll sideways for more">
+          <figure class="review">
+            <img src="images/t-dog-160.webp" alt="Ayesha's beagle" width="160" height="160" loading="lazy" decoding="async">
+            <div><blockquote>&ldquo;My dog loves it! His coat is shinier and he has so much more energy.&rdquo;</blockquote><figcaption><b>Ayesha K.</b><span class="stars" style="--r:5" role="img" aria-label="5 out of 5 stars"></span></figcaption></div>
+          </figure>
+          <figure class="review">
+            <img src="images/t-cat-160.webp" alt="Bilal's white cat" width="160" height="160" loading="lazy" decoding="async">
+            <div><blockquote>&ldquo;Finally a food my cat actually gets excited about!&rdquo;</blockquote><figcaption><b>Bilal R.</b><span class="stars" style="--r:5" role="img" aria-label="5 out of 5 stars"></span></figcaption></div>
+          </figure>
+          <figure class="review">
+            <img src="images/t-rabbit-160.webp" alt="Sara's rabbit" width="160" height="160" loading="lazy" decoding="async">
+            <div><blockquote>&ldquo;Great quality and fast delivery. Highly recommend!&rdquo;</blockquote><figcaption><b>Sara M.</b><span class="stars" style="--r:5" role="img" aria-label="5 out of 5 stars"></span></figcaption></div>
+          </figure>
+          <figure class="review">
+            <img src="images/c-bird-280.webp" alt="Daniel's budgie" width="160" height="160" loading="lazy" decoding="async">
+            <div><blockquote>&ldquo;Kiwi picks the fruit out first every time. The seed mix is spotless, no dust at all.&rdquo;</blockquote><figcaption><b>Daniel P.</b><span class="stars" style="--r:5" role="img" aria-label="5 out of 5 stars"></span></figcaption></div>
+          </figure>
+          <figure class="review">
+            <img src="images/c-fish-280.webp" alt="Megan's goldfish" width="160" height="160" loading="lazy" decoding="async">
+            <div><blockquote>&ldquo;Two weeks on Color Boost and my goldfish are noticeably brighter.&rdquo;</blockquote><figcaption><b>Megan L.</b><span class="stars" style="--r:4" role="img" aria-label="4 out of 5 stars"></span></figcaption></div>
+          </figure>
+        </div>
+        <button class="round-btn next" type="button" aria-label="Next reviews"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Trust strip ============ -->
+  <section class="trust" aria-label="Why shop with us">
+    <div class="wrap">
+      <ul class="trust-bar reveal">
+        <li><span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6h11v9h-11zM13.5 9h4l3 3.2V15h-7"/><circle cx="6.5" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></svg></span><div><b>Fast &amp; Reliable Delivery</b><span>Across the country</span></div></li>
+        <li><span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8 7.5 9.5 4.3-1.5 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg></span><div><b>100% Secure Checkout</b><span>Shop with confidence</span></div></li>
+        <li><span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 4c0 10-6 15-15 15z"/><path d="M6 18 14 10"/></svg></span><div><b>Sustainable Packaging</b><span>A greener tomorrow</span></div></li>
+        <li><span class="t-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><div><b>Trusted by Pet Parents</b><span>10,000+ happy customers</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section-tight" id="faq">
+    <div class="wrap faq-grid">
+      <div class="faq-head reveal">
+        <h2 class="h2">Questions from<br>Pet Parents</h2>
+        <p>Can&rsquo;t find your answer? Call <a href="tel:+18005550142">(800) 555-0142</a> or email <a href="mailto:hello@pawnourish.com">hello@pawnourish.com</a>. Our team replies within one business day.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details id="faq-shipping"><summary>How much is shipping, and how fast is it?</summary><p>Shipping is free on orders over $50. Below that it&rsquo;s a flat $5.99. Most orders arrive in 2 to 4 business days.</p></details>
+        <details id="faq-track"><summary>How do I track my order?</summary><p>As soon as your order ships we email you a tracking link. You can also call us with your order number and we&rsquo;ll check it for you.</p></details>
+        <details id="faq-returns"><summary>What if my pet doesn&rsquo;t like it?</summary><p>Our Love It Guarantee covers you: tell us within 30 days, even if the bag is open, and we&rsquo;ll refund you in full or send a different recipe.</p></details>
+        <details id="faq-subscription"><summary>How do subscriptions work?</summary><p>Choose a food and how often it should arrive (every 2, 4, 6 or 8 weeks) and you save 15% on every delivery. Skip, pause or cancel anytime with no fees.</p></details>
+        <details id="faq-sourcing"><summary>Where do your ingredients come from?</summary><p>Our meat and fish come from farms and fisheries we visit ourselves, and our grains and vegetables are grown in North America. Every recipe is cooked in small batches and tested before it ships.</p></details>
+        <details id="faq-sustainability"><summary>Is your packaging sustainable?</summary><p>Our bags are recyclable, our shipping boxes are plastic-free, and we offset the carbon from every delivery.</p></details>
+        <details id="faq-vet"><summary>Are your recipes vet approved?</summary><p>Yes. Every recipe is formulated with veterinary nutritionists to be complete and balanced for its life stage.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Newsletter ============ -->
+  <section class="news" aria-labelledby="newsTitle">
+    <div class="wrap">
+      <div class="news-band reveal">
+        <div class="news-copy">
+          <h2 class="h2" id="newsTitle">Join the PawNourish Family</h2>
+          <p>Get tips, special offers, and nutrition guides.</p>
+          <form class="news-form" id="newsForm" novalidate>
+            <label class="sr-only" for="newsEmail">Email address</label>
+            <input id="newsEmail" type="email" placeholder="Enter your email address" autocomplete="email" required>
+            <button class="btn btn-green" type="submit">Subscribe</button>
+          </form>
+          <p class="news-msg" id="newsMsg" role="status"></p>
+        </div>
+        <div class="news-media lqip" style="--lqip: url(data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoYABAAPqlEnEkmI6KhMAgAwBUJQBOmUABwR66ASmYH/JdHmAD+5eKnehGt63RLRpxHesIGupTdbfBOIYSBwPdP9wX19InxHqpUyuzY3IOkgAAA)">
+          <img class="fade-img" src="images/news-900.webp" srcset="images/news-600.webp 600w, images/news-900.webp 900w" sizes="(max-width: 900px) 92vw, 44vw" alt="A dog and an orange cat napping together on a blanket" width="900" height="600" loading="lazy" decoding="async">
+          <p class="news-note" aria-hidden="true">Better pets,<br>brighter<br>tomorrows &#9825;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <a class="brand light" href="#top" aria-label="PawNourish, back to top">
+        <svg class="paw" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>
+        <span class="brand-text"><span class="brand-name">Paw<b>Nourish</b></span><span class="brand-sub">Real food. Brighter days.</span></span>
+      </a>
+      <ul class="f-contact">
+        <li><a href="tel:+18005550142">(800) 555-0142</a></li>
+        <li><a href="mailto:hello@pawnourish.com">hello@pawnourish.com</a></li>
+        <li>Mon &ndash; Fri, 8 am &ndash; 6 pm ET</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul class="f-links">
+        <li><a href="#featured" data-filter="all">All Products</a></li>
+        <li><a href="#featured" data-filter="dog">Dog Food</a></li>
+        <li><a href="#featured" data-filter="cat">Cat Food</a></li>
+        <li><a href="#featured" data-filter="small">Small Pet Food</a></li>
+        <li><a href="#featured" data-filter="bird">Bird Food</a></li>
+        <li><a href="#featured" data-filter="fish">Fish Food</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul class="f-links">
+        <li><a href="#faq-track" data-faq="faq-track">Track Order</a></li>
+        <li><a href="#faq-shipping" data-faq="faq-shipping">Shipping Info</a></li>
+        <li><a href="#faq-returns" data-faq="faq-returns">Returns &amp; Refunds</a></li>
+        <li><a href="#faq" data-faq="faq-shipping">FAQs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul class="f-links">
+        <li><a href="#ingredients">Our Nutrition</a></li>
+        <li><a href="#faq-sustainability" data-faq="faq-sustainability">Sustainability</a></li>
+        <li><a href="#faq-sourcing" data-faq="faq-sourcing">Ingredient Sourcing</a></li>
+        <li><a href="#faq-vet" data-faq="faq-vet">Vet Approved</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="f-follow">
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.5V5H14c-2.2 0-3.5 1.6-3.5 3.8V11H8v3.5h2.5V21H14v-6.5h2.4l.6-3.5h-3V9.3c0-.5.4-.8 1-.8z"/></svg></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.3" cy="6.7" r="1"/></svg></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path class="fill" d="M10 9.2v5.6l4.8-2.8z"/></svg></a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M11 9.5c1.5-1.8 5-1 5 1.8 0 2.5-1.7 4-3.4 3.6-1.3-.3-1.5-1.6-1.2-2.6M11.4 12.3 9.6 20"/></svg></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.4 2.6 2.2 4.4 5 4.6"/></svg></a>
+      </div>
+      <p class="f-tagline">Good food creates<br>brighter tomorrows.</p>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; <span id="year">2026</span> PawNourish. All rights reserved.</p>
+    <p>Healthy Pets. Happier Lives. Every day.</p>
+  </div>
+</footer>
+
+<!-- ============ Cart drawer ============ -->
+<dialog class="drawer" id="cartDrawer" aria-labelledby="cartTitle">
+  <div class="drawer-inner">
+    <div class="drawer-head">
+      <h2 id="cartTitle">Your Cart</h2>
+      <button class="icon-btn small" type="button" data-close aria-label="Close cart"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
+    </div>
+
+    <div class="drawer-view" id="viewCart">
+      <div class="ship-meter" id="shipMeter">
+        <p id="shipText">Add $50.00 more for free shipping</p>
+        <div class="meter"><span id="shipBar"></span></div>
+      </div>
+      <ul class="cart-list" id="cartList"></ul>
+      <div class="cart-empty" id="cartEmpty">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>
+        <p>Your cart is empty.</p>
+        <a class="btn btn-outline btn-sm" href="#featured" data-filter="all" data-close>Shop natural food</a>
+      </div>
+      <div class="drawer-foot" id="cartFoot">
+        <form class="promo-form" id="promoForm" novalidate>
+          <label class="sr-only" for="promoInput">Promo code</label>
+          <input id="promoInput" type="text" placeholder="Promo code" autocomplete="off">
+          <button type="submit">Apply</button>
+        </form>
+        <p class="promo-msg" id="promoMsg" role="status"></p>
+        <dl class="totals">
+          <div><dt>Subtotal</dt><dd id="subTotal">$0.00</dd></div>
+          <div id="discountRow" hidden><dt>Discount <span id="discountLabel"></span></dt><dd id="discount">&minus;$0.00</dd></div>
+          <div><dt>Shipping</dt><dd id="shipping">$5.99</dd></div>
+          <div class="grand"><dt>Total</dt><dd id="grandTotal">$0.00</dd></div>
+        </dl>
+        <button class="btn btn-green btn-block" type="button" id="toCheckout">Checkout</button>
+      </div>
+    </div>
+
+    <form class="drawer-view" id="viewCheckout" novalidate hidden>
+      <button class="back-link" type="button" id="backToCart"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg> Back to cart</button>
+      <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" type="text" autocomplete="name" required><p class="field-error">Please enter your name.</p></div>
+      <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required><p class="field-error">Please enter a valid email for your receipt.</p></div>
+      <div class="field"><label for="c-address">Shipping address</label><textarea id="c-address" name="address" rows="2" autocomplete="street-address" required></textarea><p class="field-error">Please enter your shipping address.</p></div>
+      <div class="field-row">
+        <div class="field"><label for="c-zip">ZIP code</label><input id="c-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required><p class="field-error">Enter a 5-digit ZIP.</p></div>
+        <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <dl class="totals compact">
+        <div><dt>Items</dt><dd id="coItems">0</dd></div>
+        <div class="grand"><dt>Total</dt><dd id="coTotal">$0.00</dd></div>
+      </dl>
+      <button class="btn btn-green btn-block" type="submit">Place Order</button>
+      <p class="fine">You&rsquo;ll pay securely on the next step. Free returns within 30 days.</p>
+    </form>
+
+    <div class="drawer-view done-view" id="viewDone" hidden>
+      <svg class="done-paw" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="14" cy="27" rx="6.5" ry="8" transform="rotate(-18 14 27)"/><ellipse cx="25" cy="16" rx="6.5" ry="8.5" transform="rotate(-6 25 16)"/><ellipse cx="39" cy="16" rx="6.5" ry="8.5" transform="rotate(6 39 16)"/><ellipse cx="50" cy="27" rx="6.5" ry="8" transform="rotate(18 50 27)"/></svg>
+      <h3 id="doneTitle">Thank you!</h3>
+      <p id="doneText"></p>
+      <button class="btn btn-outline" type="button" data-close>Keep shopping</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ Subscription dialog ============ -->
+<dialog class="modal" id="subDialog" aria-labelledby="subTitle">
+  <form class="sub-form" id="subForm" novalidate>
+    <button class="icon-btn small modal-close" type="button" data-close aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
+    <p class="script-note">Never run out</p>
+    <h2 id="subTitle">Start a Subscription</h2>
+    <div class="field"><label for="s-product">Food</label><select id="s-product" name="product"></select></div>
+    <fieldset class="freq">
+      <legend>Deliver every</legend>
+      <label><input type="radio" name="freq" value="2"><span>2 weeks</span></label>
+      <label><input type="radio" name="freq" value="4" checked><span>4 weeks</span></label>
+      <label><input type="radio" name="freq" value="6"><span>6 weeks</span></label>
+      <label><input type="radio" name="freq" value="8"><span>8 weeks</span></label>
+    </fieldset>
+    <div class="sub-qty">
+      <span>Bags per delivery</span>
+      <div class="qty"><button type="button" id="subMinus" aria-label="One fewer bag">&minus;</button><span id="subQty">1</span><button type="button" id="subPlus" aria-label="One more bag">+</button></div>
+    </div>
+    <div class="sub-price">
+      <p><s id="subWas">$24.99</s> <b id="subNow">$21.24</b> per delivery</p>
+      <p class="save">You save <span id="subSave">$3.75</span> (15%) every time</p>
+    </div>
+    <button class="btn btn-green btn-block" type="submit">Add Subscription to Cart</button>
+    <p class="fine">Skip, pause or cancel anytime. No fees.</p>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span id="toastText">Added to cart</span>
+  <button type="button" id="toastView">View cart</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
